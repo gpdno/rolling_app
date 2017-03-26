@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @project_task.user_id %>
+</p>
+
+<p>
+  <strong>Project thread:</strong>
+  <%= @project_task.project_thread_id %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @project_task.body %>
+</p>
+
+<%= link_to 'Edit', edit_project_task_path(@project_task) %> |
+<%= link_to 'Back', project_tasks_path %>
